@@ -40,6 +40,43 @@ body {
 }
 
 /*  */
+nav {
+    position: sticky;
+    top: 0;
+    background: var(--bg-universal);
+    width: 100%;
+    box-shadow: .2rem .3rem 1rem -.5rem var(--clr-secondry);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 90px;
+    width: 110px;
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    gap: 1rem;
+}
+.navbar li {
+    list-style: none;
+}
+.navtoggleBtn {
+    position: relative;
+    z-index: 9999;
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    background: var(--bg-universal);
+    font-size: var(--fs-700);
+    cursor: pointer;
+    transition: .25s;
+}
 h1 {
     color: var(--clr-primary);
     font-size: var(--fs-800);
@@ -80,9 +117,26 @@ a:hover,a:focus {
 
 .intro {
     width: 90%;
-    max-width: 670px;
-}
+    max-width: 600px;
 
+}
+.repo {
+    border: 1px solid var(--clr-secondry);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: var(--fs-500);
+    background: white;
+    margin-block: 1rem;
+    font-weight: var(--fw-700);
+    color: var(--clr-secondry);
+    cursor: pointer;
+    transition: .25s;
+}
+.repo:hover,.repo:focus {
+    color: white;
+    background: var(--clr-secondry);
+    box-shadow: .3rem .5rem 1rem var(--clr-secondry);
+}
 .project-list {
     background: rgb(250, 249, 249);
 }
@@ -145,7 +199,55 @@ a:hover,a:focus {
     text-align: center;
 }
 @media only screen and (min-width: 360px) {
+.navbar {
+    position: absolute;
+    z-index: 9998;
+    flex-direction: column;
+    right: 0;
+    top: -16px;
+    width: 40%;
+    max-width: 550px;
+    background: var(--bg-universal);
+    height: 100vh;
+    justify-content: center;
+    box-shadow: .2rem .3rem 1rem -.2rem var(--clr-secondry);
+    display: none;
+    opacity: .9;
+    backdrop-filter: blur(4px);
+}
+.navbar[data-hidden="false"] {
+    display: flex;
+}
 .wrapper {
     width: 100%;
 }
+.intro {
+    text-align: center;
+}
+}
+@media only screen and (min-width: 669px) {
+.intro {
+    text-align: left;
+}
+}
+@media only screen and (min-width: 1024px) {
+    .logo {
+        position: relative;
+        left: 100px;
+    }
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        top: 0px;
+        right: 100px;
+        max-width: 550px;
+        height: auto;
+        justify-content: center;
+        box-shadow: none;
+        gap: 1.4rem;
+    }
+    .navtoggleBtn {
+        display: none;
+    }
 }

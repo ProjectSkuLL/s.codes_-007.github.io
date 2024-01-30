@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,32 +14,57 @@
     <link rel="stylesheet" href="./style.css">
     <title>s.codes__007-Homepage</title>
 </head>
+
 <body>
+    <!-- navigation bar -->
+    <nav>
+        <div class="logo">
+            <a href="./">
+                <img src="./assets/logo/scodes-logos_transparent.png" alt="Logo Image">
+            </a>
+        </div>
+        <ul class="navbar" id="navigationbar" data-hidden="true">
+            <li><a href="">Home</a></li>
+            <li><a href="https://projectskull.github.io/s.codes_-007.github.io/projectssection">Projects</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <button class="navtoggleBtn" id="navtogglebtn"><i class="fa fa-solid fa-bars"></i></button>
+    </nav>
+    <!-- main starts here -->
     <div class="wrapper main">
         <div class="wrapper intro">
             <h1>HELLO</h1>
             <p><span class="fs-700">s.codes__007</span> here. <br>
-            You can access all my projects to rebuild, learn or for reference.</p>
-            <p>All of my projects are beginner friendly so feel free to recreate them i wish you all the best :). Oh by the way you can visit my Repository by <a href="https://github.com/ProjectSkuLL/s.codes_-007.github.io">Clicking Here</a></p>
+                You can access all my projects to rebuild, learn or for reference.</p>
+            <p>All of my projects are beginner friendly so feel free to recreate them i wish you all the best :) <br>
+                <button class="repo" id="repobtn">Visit Repository</button>
         </div>
+
         <div class="wrapper project-list">
             <h2>PROJECTS</h2>
             <ul>
-                <li><a href="https://projectskull.github.io/s.codes_-007.github.io/BharathBhraman">Bharath Bhramana.</a></li>
-                <li><a href="https://projectskull.github.io/s.codes_-007.github.io/loginform/">Login-form(Remastered).</a></li>
+                <li><a
+                        href="https://projectskull.github.io/s.codes_-007.github.io/loginform/">Login-form(Remastered).</a>
+                </li>
                 <li><a href="https://projectskull.github.io/s.codes_-007.github.io/blogcard">Blog-Card.</a></li>
-                <li><a href="https://projectskull.github.io/s.codes_-007.github.io/fourcardfeaturesection">Four-Cards-Feature Section.</a></li>
-                <li><a href="https://projectskull.github.io/s.codes_-007.github.io/notificationspage">Notifications.</a></li>
+                <li><a href="https://projectskull.github.io/s.codes_-007.github.io/fourcardfeaturesection">Four-Cards-Feature
+                        Section.</a></li>
+                <li><a href="https://projectskull.github.io/s.codes_-007.github.io/notificationspage">Notifications.</a>
+                </li>
             </ul>
-            <p class="viewmore"><a href="https://projectskull.github.io/s.codes_-007.github.io/projectssection"class="fs-700">View More ></a></p>
+            <p class="viewmore"><a href="https://projectskull.github.io/s.codes_-007.github.io/projectssection"
+                    class="fs-700">View More ></a></p>
         </div>
+
         <div class="wrapper socials">
             <button class="socialBtn" id="instagram"><i class="fa fa-instagram"></i></button>
             <button class="socialBtn" id="google"><i class="fa fa-google"></i></button>
         </div>
-    <p class="attribution">Made by s.codes__007 .</p>
+        
+        <p class="attribution">Made by s.codes__007 .</p>
 
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
