@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Bharath Bhramand - Lakshadweep</title>
+</head>
+<body>
+<div class="wrapper-main" id="Home">
+        <nav>
+            <div class="logo">
+                <img src="./assets/images/Bharat Bhraman-logos_transparent.png" alt="Logo Here">
+            </div>
+            <ul class="navbar" data-hidden="true">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Locations">Locations</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Bookings">Bookings</a></li>
+                <li><a href="#Experiences">Experiences</a></li>
+            </ul>
+            <button class="navtogglebtn" onclick="navToggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="home">
+            <h1>LAKSHADWEEP</h1>
+            <p>Experience the beauty of Lakshadweep with your own eyes.</p>
+            <button class="explorebtn">EXPLORE</button>
+        </div>
+</div>
+<!-- Locations -->
+<div class="wrapper-locations" id="Locations">
+<h2>LOCATIONS</h2>
+<p>Lakshadweep is a union territory of India. It is an archipelago of 36 islands serving as the maritime boundary between the Arabian Sea to the west and the Laccadive Sea to the east. It is located 200 to 440 km (120 to 270 mi) off the Malabar Coast of India.</p> <br>
+<p><span>Ready to Explore?</span> Locations such as Andretti, Agatti, Minicoy and so much more are waiting to be explored.</p>
+<div class="locations-cards">
+    <div class="cards-wrapper">
+        <div class="image">
+            <img src="./assets/images/andretti-island.jpeg" alt="Image here">
+        </div>
+        <h3>Andretti</h3>
+        <p>Also known as Andrott Island, this is the largest island of Lakshadweep and is located closest to the India mainland.</p>
+        <button class="explorebtn">Explore</button>
+    </div>
+    <div class="cards-wrapper">
+        <div class="image">
+            <img src="./assets/images/agatti-island1-1.jpg" alt="Image here">
+        </div>
+        <h3>Agatti</h3>
+        <p>Agatti Island is a 7.6 km long island, situated on a coral atoll called Agatti atoll in the Union... </p>
+        <button class="explorebtn">Explore</button>
+    </div>
+    <div class="cards-wrapper">
+        <div class="image">
+            <img src="./assets/images/Minicoy-island.jpg" alt="Image here">
+        </div>
+        <h3>Minicoy</h3>
+        <p>Minicoy has turqoise blue water, a romantic voyage to minicoy, the south most lagoon of Lakshadweep</p>
+        <button class="explorebtn">Explore</button>
+    </div>
+    <div class="cards-wrapper">
+        <div class="image">
+            <img src="./assets/images/Bangaram-Island.webp" alt="Image here">
+        </div>
+        <h3>Bangaram</h3>
+        <p>A 20 minute speed boat ride from Agatti island, the Bangaram atoll thread includes tiny islands of Thinnakara... </p>
+        <button class="explorebtn">Explore</button>
+    </div>
+</div>
+<a href="#" class="vande">View More ></a>
+</div>
+<!-- gallery -->
+<div class="wrapper-gallery" id="Gallery">
+    <h2>GALLERY</h2>
+    <p>Explore the exotic and captivating Beauty of Lakshadweep Islands.</p>
+    <div class="wrapper-slider">
+        <div class="slider">
+            <button id="prev" class="slide-button material-symbols-outlined">chevron_left</button>
+            <div class="slides">
+            <div class="gallery-cards">
+                <img src="./assets/images/Gallery-slider-image-1.jpg" alt="Image Here">
+            </div>
+                <div class="gallery-cards">
+                <img src="./assets/images/Gallery-slider-image-2.webp" alt="Image Here">
+            </div>
+                <div class="gallery-cards">
+                <img src="./assets/images/Gallery-slider-image-3.jpg" alt="Image Here">
+            </div>
+                <div class="gallery-cards">
+                <img src="./assets/images/Gallery-slider-image-4.webp" alt="Image Here">
+            </div>
+                <div class="gallery-cards">
+                <img src="./assets/images/Gallery-slider-image-5.jpg" alt="Image Here">
+            </div>
+                <div class="gallery-cards">
+                <img src="./assets/images/Gallery-slider-image-6.webp" alt="Image Here">
+            </div>
+            </div>
+            <button id="next" class="slide-button material-symbols-outlined">chevron_right</button>
+        </div>
+    </div>
+</div>
+<!-- Bookings -->
+<div class="wrapper-bookings" id="Bookings">
+<h2>BOOKINGS</h2>
+<p>Available Flights to Agatti Island
+   airport, Lakshadweep Island, India.
+</p>
+<div class="wrapper-bookingcards">
+
+<div class="booking-cards">
+ <div class="top">
+    <img src="./assets/images/plane-logo.svg" alt="plane logo">
+    <h3>Flight</h3>
+ </div>   
+ <h4>Flight to Kochi airport, then flight to Agatti airport</h4>
+ <div class="mid">
+    <div class="flighttiming">
+        <p><span class="fs-22">From:</span> Delhi</p>
+        <p><span class="fs-22">To:</span> Kochi</p>
+    </div>
+    <p class="clr-black">3h 10m</p>
+    <div class="flighttiming">
+        <p><span class="fs-22">From:</span> Kochi</p>
+        <p><span class="fs-22">To:</span> Agatti</p>
+    </div>
+    <p class="clr-black">1h 20m</p>
+ </div>
+ <p class="fs-22"><span>Booking Price :</span> ₹ 12,100</p>
+ <button class="bookbtn">BOOK NOW</button>
+</div>
+
+<div class="booking-cards">
+ <div class="top">
+    <img src="./assets/images/plane-logo.svg" alt="plane logo">
+    <h3>Flight</h3>
+ </div>   
+ <h4>Flight to Bangalore airport, then flight to Kochi airport, then flight to Agatti       Airport</h4>
+ <div class="mid">
+    <div class="flighttiming">
+        <p><span class="fs-22">From:</span> Bangalore</p>
+        <p><span class="fs-22">To:</span> Kochi</p>
+    </div>
+    <p class="clr-black">3h 10m</p>
+    <div class="flighttiming">
+        <p><span class="fs-22">From:</span> Kochi</p>
+        <p><span class="fs-22">To:</span> Agatti</p>
+    </div>
+    <p class="clr-black">1h 20m</p>
+ </div>
+ <p class="fs-22"><span>Booking Price :</span> ₹ 15,865</p>
+ <button class="bookbtn">BOOK NOW</button>
+</div>
+
+<div class="booking-cards">
+ <div class="top">
+    <img src="./assets/images/plane-logo.svg" alt="plane logo">
+    <h3>Flight</h3>
+ </div>   
+ <h4>Flight to Bangalore airport, then flight to Kochi airport, then flight to Agatti       Airport</h4>
+ <div class="mid">
+    <div class="flighttiming">
+        <p><span class="fs-22">From:</span> Bangalore</p>
+        <p><span class="fs-22">To:</span> Kochi</p>
+    </div>
+    <p class="clr-black">3h 10m</p>
+    <div class="flighttiming">
+        <p><span class="fs-22">From:</span> Kochi</p>
+        <p><span class="fs-22">To:</span> Agatti</p>
+    </div>
+    <p class="clr-black">1h 20m</p>
+ </div>
+ <p class="fs-22"><span>Booking Price :</span> ₹ 15,865</p>
+ <button class="bookbtn">BOOK NOW</button>
+</div>
+
+<div class="booking-cards">
+ <div class="top">
+    <img src="./assets/images/plane-logo.svg" alt="plane logo">
+    <h3>Flight</h3>
+ </div>   
+ <h4>Flight to Bangalore airport, then flight to Kochi airport, then flight to Agatti       Airport</h4>
+ <div class="mid">
+    <div class="flighttiming">
+        <p><span class="fs-22">From:</span> Bangalore</p>
+        <p><span class="fs-22">To:</span> Kochi</p>
+    </div>
+    <p class="clr-black">3h 10m</p>
+    <div class="flighttiming">
+        <p><span class="fs-22">From:</span> Kochi</p>
+        <p><span class="fs-22">To:</span> Agatti</p>
+    </div>
+    <p class="clr-black">1h 20m</p>
+ </div>
+ <p class="fs-22"><span>Booking Price :</span> ₹ 15,865</p>
+ <button class="bookbtn">BOOK NOW</button>
+</div>
+
+</div>
+<p class="mb-10rem">For family vacations, trips, solo tour packages and couple packages. Check out our <a href="#" class="clr-darknavyblue">Special Packages</a>.</p>
+</div>
+<!-- Experiences -->
+<div class="wrapper-experiences" id="Experiences">
+<h2>EXPERIENCES</h2>
+<p>Lakshadweep Islands has so much to offer, apart from it's natural beauty and heritage, there is so much cultural knowledge, historical presence and much more to explore.</p>
+<div class="wrapper-experiencecards">
+   <div class="experience-cards">
+    <div class="ec-image">
+        <img src="./assets/images/Experience-underwater-agatti.webp" alt="IMage Here">
+    </div>
+    <div class="ec-description">
+        <p>Agatti Island is an incredible place with calm water, ensuring one has a surreal experience. One looking for the perfect things to do in Agatti Island never misses out to go for snorkelling. The shallow shores are full of colourful reefs and exotic underwater animals.</p>
+        <a href="#" class="fs-22">Check Review</a>
+    </div>
+   </div> 
+
+   <div class="experience-cards">
+    <div class="ec-image">
+        <img src="./assets/images/kite-surfing-lashadweep.jpg" alt="IMage Here">
+    </div>
+    <div class="ec-description">
+        <p>Kite Surfing is an enthralling water sport adventure where one can participate at Lakshadweep. Kadmat Island, among others is a popular spot for the adventure of kite surfing. Kadmat Island offers a good opportunity to practice surfing and go deeper with your kite. Practice enough once you get your hands on it, after which the adventure will be much more fun.</p>
+        <a href="#" class="fs-22">Check Review</a>
+    </div>
+   </div> 
+
+   <div class="experience-cards">
+    <div class="ec-image">
+        <img src="./assets/images/party-lakshadweep.webp" alt="IMage Here">
+    </div>
+    <div class="ec-description">
+        <p>Nightlife at some of the Lakshadweep islands is a colourful lively affair. Eateries and restaurants are full of ravishing and zestful seafood that is so unique to this place. In the night, islands offer ambrosial vibes with extremely pleasant weather, scenic beauty and entrancing music. Head to Bangaram Island if you are a party animal. Agatti Island is for angelic natural beauty and marvelous night life.</p>
+        <a href="#" class="fs-22">Check Review</a>
+    </div>
+   </div> 
+
+</div>
+<a href="#" class="vande">Explore ></a>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
