@@ -75,7 +75,7 @@ a:hover,a:focus {
 .main {
     width: 90%;
     background: var(--bg-universal);
-    box-shadow: .5rem .2rem 2rem -.4rem black;
+    box-shadow: .1rem .2rem .7rem -.4rem black;
 }
 
 .intro {
@@ -86,8 +86,24 @@ a:hover,a:focus {
 .project-list {
     background: rgb(250, 249, 249);
 }
+.project-list ul {
+    padding: 0;
+}
 .project-list ul li {
     list-style: num;
+    list-style-position: inside;
+    margin-block: 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: .2s;
+}
+.project-list ul li:hover,.project-list ul li:focus {
+    box-shadow: .1rem .2rem .4rem -.2rem black;
+}
+.viewmore {
+    text-align: center;
+    margin-top: 30px;
 }
 .socials {
     padding: 20px;
@@ -127,4 +143,9 @@ a:hover,a:focus {
 
 .attribution {
     text-align: center;
+}
+@media only screen and (min-width: 360px) {
+.wrapper {
+    width: 100%;
+}
 }
