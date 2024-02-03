@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" height="36px" width="36px">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./game.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <div class="wrapper-game">
+        <div class="top">
+            <h1>Number Guessing Game</h1>
+            <p><span class="fs-700">Rules: </span>Players will get 100 chances in total. If the player successfully guessed the number then they will win.</p>
+        </div>
+
+        <div class="game">
+            <form action="./game.html" name="numbergame" class="ng">
+                <input type="text" name="number" id="userinput" placeholder=":)">
+            </form>
+            <div class="display-screen" id="ds">
+                <p class="message" id="message"></p>
+                <p class="remainingchances" id="rc"><span class="fs-700"></span></p>
+            </div>
+            <div class="result" id="result">
+                <p class="score"><span class="fs-700"></span></p>
+            </div>
+            <button class="startgame" id="startbtn">START</button>
+        </div>
+
+    </div>
+<script src="./game.js"></script>
+</body>
+</html>
