@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>s.codes Contact</title>
+</head>
+
+<body>
+    <!-- contact-main starts here -->
+    <div class="wrapper contact-main" data-visible="true">
+        <div class="main-left">
+            <div class="left-content">
+                <p>For any kind of suggestion/feedback and queries feel free to</p>
+                <h1>Contact Me</h1>
+                <hr class="partition-line">
+                <div class="socials">
+                    <h2>Socials</h2>
+                    <p>For more projects and uploads follow me on :</p>
+                    <button class="socialbtn" id="instagram"><i class="fa fa-instagram"></i></button>
+                    <button class="socialbtn" id="github"><i class="fa fa-github"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-right">
+            <form action="" class="contactform" id="contactform">
+                <div class="form-fields">
+                    <label for="fname">Full Name</label>
+                    <input type="text" name="f-name" id="fname" placeholder="  eg - Sankalp Chauhan" required>
+                </div>
+                <div class="form-fields">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="e-mail" id="email" placeholder="  eg - someone@example.com" required
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"ml>
+                    <span class="mailerror"></span>
+                </div>
+                <div class="form-fields">
+                    <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder=" Suggestion/Feedback"></textarea>
+                </div>
+                <input type="submit" value="SUBMIT" class="submitbtn" id="submit">
+            </form>
+        </div>
+    </div>
+    <!-- contact-main ends here -->
+
+    <!-- success-msg starts here -->
+    <div class="success-msg" data-visible="false">
+        <h1>Thanks for reaching out to me</h1>
+        <p>I appreciate your thoughts and will reach back to you as soon as possible</p>
+        <button class="dismissBtn" id="dismiss">DISMISS</button>
+    </div>
+    <!-- success-msg ends here -->
+    <p class="attribution">Made by Sankalp Chauhan</p>
+    <script src="./script.js"></script>
+</body>
+
+</html>
