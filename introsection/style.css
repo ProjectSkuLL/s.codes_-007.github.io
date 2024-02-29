@@ -1,0 +1,426 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff);
+    line-height: 1.7rem;
+}
+
+body {
+    background: var(--clr-primary);
+}
+
+:root {
+    --ff: 'Epilogue', sans-serif;
+    --fs-700S: 2.4rem;
+    --fs-700L: 5rem;
+    --fs-500: 1.1rem;
+
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --clr-primary: hsl(0, 0%, 98%);
+    --clr-secondry: hsl(0, 0%, 8%);
+    --clr-medium: hsl(0, 0%, 41%);
+}
+nav {
+    position: sticky;
+    z-index: 99999;
+    top: 0;
+    display: flex;
+    width: 100%;
+    background: var(--clr-primary);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 40px;
+    width: 120px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s ease-in-out;
+    background: var(--clr-primary);
+}
+
+.navlist {
+    display: flex;
+    width: 50%;
+    gap: 2rem;
+}
+
+.topleft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.topleft :nth-child(1):hover .dropdown-list,
+.topleft :nth-child(1):focus .dropdown-list {
+    display: flex;
+}
+
+.topleft :nth-child(2):hover .dropdown-list,
+.topleft :nth-child(2):focus .dropdown-list {
+    display: flex;
+}
+
+.bottomright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-medium);
+}
+
+a:hover,
+a:focus {
+    color: var(--clr-secondry);
+}
+
+.dropdown-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 9977;
+    background: var(--clr-primary);
+    max-width: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    box-shadow: .4rem 1rem 1rem -.5rem var(--clr-medium);
+    border-radius: 15px;
+}
+.dd-icon {
+    padding: 10px;
+    background: url('./images/icon-arrow-down.svg') no-repeat center;
+}
+.dd:hover .dd-icon,.dd:focus .dd-icon {
+    background: url('./images/icon-arrow-up.svg') no-repeat center;
+}
+.navtogglebtn {
+    position: relative;
+    z-index: 9999;
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: inherit;
+}
+
+.registerbtn {
+    height: 50px;
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 700px;
+    border: 2px solid var(--clr-medium);
+    color: var(--clr-medium);
+    background: var(--clr-primary);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.registerbtn:hover,
+.registerbtn:focus {
+    color: var(--clr-secondry);
+    border: 2px solid var(--clr-secondry);
+}
+
+/* main styling */
+h1 {
+    font-size: var(--fs-700S);
+    font-weight: var(--fw-700);
+    color: var(--clr-secondry);
+}
+
+p {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-500);
+    color: var(--clr-medium);
+}
+
+.main {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+.col {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.image {
+    height: 400px;
+    width: auto;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0px;
+    margin: 0;
+}
+
+.learnmore {
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: var(--clr-secondry);
+    color: var(--clr-primary);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-700);
+    transition: .3s ease-in-out;
+}
+
+.learnmore:hover,
+.learnmore:focus {
+    background: var(--clr-primary);
+    color: var(--clr-secondry);
+    border: 2px solid var(--clr-secondry);
+}
+.clients {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media only screen and (min-width: 360px) {
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: -90%;
+        width: 85%;
+        max-width: 200px;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        height: 100vh;
+        z-index: 9999;
+    }
+
+    .navbar[data-right="false"] {
+        right: 0px;
+    }
+
+    .navlist {
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        padding: 15px;
+    }
+
+    .topleft {
+        margin-top: 6rem;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .bottomright {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .registerbtn {
+        width: 160px;
+    }
+
+    .navtoggleBtn {
+        background: inherit;
+        height: 45px;
+        width: 45px;
+        z-index: 9999;
+        transition: .3s ease-in-out;
+        border: none;
+    }
+
+    #herod {
+        display: none;
+    }
+
+    /* main styling*/
+    .main {
+        max-width: 558px;
+    }
+
+    .clients {
+        max-width: 375px;
+    }
+
+    .clients img {
+        width: 70px;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* main styling*/
+    .main {
+        max-width: 768px;
+    }
+
+    .clients {
+        max-width: 768px;
+    }
+
+    .clients img {
+        width: 100px;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .navbar {
+        position: relative;
+        right: 0px;
+        max-width: 90%;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .navlist {
+        width: 50%;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .topleft {
+        margin: 0;
+        align-items: center;
+        justify-content: flex-sart;
+    }
+
+    .bottomright {
+        margin: 0;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .navtogglebtn {
+        display: none;
+    }
+
+    .registerbtn {
+        width: 140px;
+    }
+
+    .registerBtn {
+        width: 120px;
+    }
+
+    #herom {
+        display: none;
+    }
+
+    #herod {
+        display: block;
+    }
+
+    /* main styling*/
+    .main {
+        margin-top: 1rem;
+        max-width: 1280px;
+        flex-direction: row-reverse;
+        line-height: 0;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: var(--fs-700L);
+        max-width: 480px;
+        line-height: 1;
+        margin: 10px;
+    }
+
+    p {
+        max-width: 400px;
+        line-height: 1.7rem;
+    }
+
+    .col {
+        max-width: 45%;
+        height: 700px;
+        position: relative;
+    }
+
+    .image {
+        width: 700px;
+    }
+
+    .image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .content {
+        align-items: baseline;
+        text-align: left;
+        margin: 0;
+    }
+
+    .clients {
+        max-width: 100%;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .clients img {
+        width: 70px;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .main {
+        max-width: 1300px;
+    }
+}
